@@ -1,9 +1,9 @@
 # Setup
 title: "Mathematica 激活指南"
 tagline: "Mathematica 的安装、激活、入门、常见问题"
-baseurl: "/InstallTutorial"
+baseurl: ""
 paginate: 1
-locale: "zh-Hans"
+locale: "zh-hans"
 
 # Contact
 author:

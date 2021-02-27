@@ -183,7 +183,7 @@ Git commit message 是一段多行文本。第一行通常称为“summary”或
 
 可在下列网站查询 emoji code：
 
-* [Emoji cheat sheet](http://emoji-cheat-sheet.com/)
+* [Emoji cheat sheet](https://emoji-cheat-sheet.com/)
 * [Emojipedia](https://emojipedia.org/)
 
 ## VS Code 编辑常见问题
@@ -233,7 +233,7 @@ Git commit message 是一段多行文本。第一行通常称为“summary”或
 ```
 
 * 在一个组内，各备选下载地址提供的内容是相同的。
-* “版本号”是 Wolfram 语言的完整版本号 (full version number)。对 Mathematica 来说，它就是 Mathematica 的版本号。参看 [`$ReleaseNumber`](http://reference.wolfram.com/language/ref/$ReleaseNumber.html)。
+* “版本号”是 Wolfram 语言的完整版本号 (full version number)。对 Mathematica 来说，它就是 Mathematica 的版本号。参看 [`$ReleaseNumber`](https://reference.wolfram.com/language/ref/$ReleaseNumber.html)。
 * 一个组可以打包多个“项目”。多个项目用加号 (`+`) 连接，加号两侧要留空格。
 * `平台 语言` 是 Mathematica 安装文件项目的书写格式。其他类型的项目（例如下载器）直接写名字即可。
 * 如果一个下载地址有备注说明，写在它那行。
@@ -295,7 +295,7 @@ Wolfram 推出了 [**Wolfram Engine for Developers**](https://www.wolfram.com/en
 **示例**
 
 ```markdown
-可以在 <http://tieba.baidu.com/p/5696398243> 下载中文帮助文档包。
+可以在 <https://tieba.baidu.com/p/5696398243> 下载中文帮助文档包。
 ```
 
 ## 如何处理 IRI 和 URI
@@ -346,13 +346,13 @@ Wolfram 推出了 [**Wolfram Engine for Developers**](https://www.wolfram.com/en
 **示例**
 
 输入
-`http://教育部.政务/`
+`https://教育部.政务/`
 
 输出
-`http://教育部.政务/`
+`https://教育部.政务/`
 
 ```powershell
-[Uri]::new([Uri]::new('http://教育部.政务/').ToString()).AbsoluteUri
+[Uri]::new([Uri]::new('https://教育部.政务/').ToString()).AbsoluteUri
 ```
 
 > **注意**
@@ -362,14 +362,14 @@ Wolfram 推出了 [**Wolfram Engine for Developers**](https://www.wolfram.com/en
 > 如果希望转换 IDN 到 Punycode，请寻求其他方式。例如，读取 `IdnHost` property，再使用 `System.UriBuilder` 手工拼接：
 >
 > ```powershell
-> $mUri = [Uri]::new([Uri]::new('http://教育部.政务/').ToString())
+> $mUri = [Uri]::new([Uri]::new('https://教育部.政务/').ToString())
 > $mBuilder = [UriBuilder]::new($mUri)
 > $mBuilder.Host = $mUri.IdnHost
 > $mBuilder.Uri.AbsoluteUri
 > ```
 >
 > 本例的 IRI 在完全转换后是
-> `http://xn--wcvs22dzol.xn--zfr164b/`
+> `https://xn--wcvs22dzol.xn--zfr164b/`
 
 ## 如何使用警示块
 

@@ -11,7 +11,7 @@ title: {{ site.title }}
 
 本文上次更新时，中国区学生版为 181 美元（如需实体安装介质，需另付相关费用），[此处为购买链接](https://store.wolfram.com/arrive.cgi?Qualifier=STUD&URI=/view/app/mathematica/student&Country=CN)。购买学生版需要验证学生身份（例如学信网截图、学生证、录取通知书）。
 
-购买方法的一些介绍： <http://tieba.baidu.com/p/2570976088>
+购买方法的一些介绍： <https://tieba.baidu.com/p/2570976088>
 
 此外，通过代理商购买也是一个可行渠道，具体商家这里就不提了，请各位善用搜索引擎。
 
@@ -21,7 +21,7 @@ title: {{ site.title }}
 
 ---
 
-[百度贴吧](http://tieba.baidu.com/f?kw=mathematica)里的帖子不能编辑，很不方便。
+[百度贴吧](https://tieba.baidu.com/f?kw=mathematica)里的帖子不能编辑，很不方便。
 
 但大家<del>在激活失败这事上可以说是拥有无穷的创造力</del>，激活过程又会出现新的问题。故开此文档，整理安装、激活 Mathematica 的过程，以及可能碰到的问题。以后如果出现新的问题，欢迎补充整理。
 
@@ -78,6 +78,7 @@ Wolfram Engine 的激活方法可参考官网的介绍 [How do I set up the Wolf
 >
 > * SharePoint / OneDrive 方式需要**在浏览器中**下载，不要使用下载工具。因为许多下载工具不能正确处理 OneDrive 要求的[身份验证](https://docs.microsoft.com/en-us/sharepoint/authentication)，导致连接失败。（据说，IDM 等稍做配置也可以用，请自行探索。）
 > * 从 OneDrive 下载时，如果长时间（十几分钟）速度很慢（几十 kB/s），请果断取消，再重新开始（如果浏览器支持，在下载管理中点击“重试”即可）。因为稳定在这么慢的速度，表明网络阻塞，重连有时能改善；此外，服务器可能会挂断那些长时间慢速连接，最终还是要重新下载。
+> * SharePoint / OneDrive 有反滥用、[限流措施](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)。如果密集访问，服务器可能会屏蔽用户。对于极严重的滥用情况，Microsoft 可能会介入调查。
 
 ## 运行代码的替代品
 
@@ -90,39 +91,39 @@ Wolfram Engine 的激活方法可参考官网的介绍 [How do I set up the Wolf
     1. 点一下 Hello World
     2. 在 Code 里输入代码。
     3. 点上面播放键
-    
+
     优点：
 
     1. Wolfram Cloud 速度慢，这个相对较快
     2. 一直是最新版，可以 `$Version` 确认
-    
+
     缺点：
 
     1. 就是纯 txt
     2. 60s 计算限时
     3. 不支持图片
     4. 没有拓展性
-    
+
     > 联想成在一个 txt 里写代码就行。
 
 2. [Mathics](https://mathics.github.io/)
 
     优点：
-    
+
     1. 基于纯 Python, 免费
-    
+
     缺点：
-    
+
     1. ~~停更很久了，版本过老（很多函数不支持）~~ 恢复更新了，`pip install Mathics3`
 
 3. [Wolfram Cloud](https://www.wolframcloud.com/)
 
     优点：
-    
+
     1. 官方出品，不考虑速度的话接近原生体验，甚至有帮助文档。
-    
+
     缺点
-    
+
     1. 速度太慢
 
 ## Mathematica 软件下载
@@ -164,7 +165,7 @@ Wolfram Engine 的激活方法可参考官网的介绍 [How do I set up the Wolf
 
 > **注意**
 >
-> [**版本 12.1 解决了 HDPI 显示支持的问题**](https://reference.wolfram.com/language/guide/SummaryOfNewFeaturesIn121.html)。此前，Windows 版在 HDPI 显示器上会界面模糊，那时的缓解措施是，设置 **高 DPI 缩放替代** (High DPI scaling override) 为 **应用程序** (Application)，以及调节 Wolfram 笔记本的缩放 (Magnification) 等。
+> [**版本 12.1 解决了 HiDPI 显示支持的问题**](https://reference.wolfram.com/language/guide/SummaryOfNewFeaturesIn121.html)。此前，Windows 版在 HiDPI 显示器上会界面模糊，那时的缓解措施是，设置 **高 DPI 缩放替代** (High DPI scaling override) 为 **应用程序** (Application)，以及调节 Wolfram 笔记本的缩放 (Magnification) 等。
 >
 > ---
 >
@@ -293,10 +294,10 @@ Wolfram Engine 的激活方法可参考官网的介绍 [How do I set up the Wolf
     * [WDM Mirror 主线](https://wdm.itsu.eu.org/Rasis/Mathematica/13.0.1.0/BNDL_Chinese/)
     * [WDM Mirror 备线](https://wdm-v2.itsu.eu.org/Grace/Mathematica/13.0.1.0/BNDL_Chinese/)
 * 离线文档扩展包
-  * (13.0.1 英文) Windows + Mac 
+  * (13.0.1 英文) Windows + Mac
     * [WDM Mirror 主线](https://wdm.itsu.eu.org/Rasis/WLDocs/13.0.1.0/English/) **文件名里有 `CN` 但确实是英文！**
     * [WDM Mirror 备线](https://wdm-v2.itsu.eu.org/Grace/WLDocs/13.0.1.0/English/) **文件名里有 `CN` 但确实是英文！**
-  * (13.0.1 中文) Windows + Mac 
+  * (13.0.1 中文) Windows + Mac
     * [WDM Mirror 主线](https://wdm.itsu.eu.org/Rasis/WLDocs/13.0.1.0/Chinese/)
     * [WDM Mirror 备线](https://wdm-v2.itsu.eu.org/Grace/WLDocs/13.0.1.0/Chinese/)
 
@@ -361,8 +362,8 @@ Wolfram Engine 的激活方法可参考官网的介绍 [How do I set up the Wolf
 
 * (12.1.1) Windows 英文 + Linux 英文 + Mac 英文
   * [百度网盘](https://pan.baidu.com/s/1OKtjGDdj8HN3JgtfW7_ppQ) 提取码：`ftci`
-  * [WDM Mirror 主线](https://wdm.itsu.eu.org/Rasis/Mathematica/12.1.1.0/English/) 
-  * [WDM Mirror 备线](https://wdm-v2.itsu.eu.org/Grace/Mathematica/12.1.1.0/English/) 
+  * [WDM Mirror 主线](https://wdm.itsu.eu.org/Rasis/Mathematica/12.1.1.0/English/)
+  * [WDM Mirror 备线](https://wdm-v2.itsu.eu.org/Grace/Mathematica/12.1.1.0/English/)
 
 ### Mathematica 12.0
 
@@ -438,17 +439,17 @@ Wolfram Engine 的激活方法可参考官网的介绍 [How do I set up the Wolf
 >
 > 只有自带了**中文帮助**的才叫中文版！自行汉化的方法详见前文“中文版和英文版的区别”小节。
 
-对于最新的版本 10 中文版，自版本 9.0.1 持续至今的中文帮助搜索能力退化问题已经得到了解决。（10.3.0 版本时，部分电脑需要使用 <http://tieba.baidu.com/p/4172398243> 中的方法进行修复，10.3.1 后似乎已无此问题）
+对于最新的版本 10 中文版，自版本 9.0.1 持续至今的中文帮助搜索能力退化问题已经得到了解决。（10.3.0 版本时，部分电脑需要使用 <https://tieba.baidu.com/p/4172398243> 中的方法进行修复，10.3.1 后似乎已无此问题）
 
-[Mathematica 10.4.1 中文版](http://pan.baidu.com/s/1o8NEPei) 提取码：`wx9u`
+[Mathematica 10.4.1 中文版](https://pan.baidu.com/s/1o8NEPei) 提取码：`wx9u`
 
-[Mathematica 10.4 英文版](http://pan.baidu.com/s/1jHbldtG)
+[Mathematica 10.4 英文版](https://pan.baidu.com/s/1jHbldtG)
 
-[Mathematica 10.4 英文版（Linux 版）](http://pan.baidu.com/s/1kUrz2qr)（前面已经说了，Linux 版没中文）
+[Mathematica 10.4 英文版（Linux 版）](https://pan.baidu.com/s/1kUrz2qr)（前面已经说了，Linux 版没中文）
 
-[Mathematica 10.4 英文版（Mac 版）](http://pan.baidu.com/s/1i3RfiNb)
+[Mathematica 10.4 英文版（Mac 版）](https://pan.baidu.com/s/1i3RfiNb)
 
-[CDF Player 10.3.1 英文版](http://pan.baidu.com/s/1i4kFX7v)
+[CDF Player 10.3.1 英文版](https://pan.baidu.com/s/1i4kFX7v)
 
 ### Mathematica 9.0.1
 
@@ -460,13 +461,13 @@ Wolfram Engine 的激活方法可参考官网的介绍 [How do I set up the Wolf
 >
 > 只有自带了**中文帮助**的才叫中文版！自行汉化的方法详见前文“中文版和英文版的区别”小节。
 
-[Mathematica 9.0.1 中文版](http://pan.baidu.com/share/link?shareid=341776&uk=353288367)
+[Mathematica 9.0.1 中文版](https://pan.baidu.com/share/link?shareid=341776&uk=353288367)
 
-[Mathematica 9.0.1 英文版](http://pan.baidu.com/s/1qWL166g)
+[Mathematica 9.0.1 英文版](https://pan.baidu.com/s/1qWL166g)
 
-[Mathematica 9.0.1 英文版](http://pan.baidu.com/s/1ntxRa5N)（Linux 版，前面已经说了 Linux 版没中文）
+[Mathematica 9.0.1 英文版](https://pan.baidu.com/s/1ntxRa5N)（Linux 版，前面已经说了 Linux 版没中文）
 
-[Mathematica 9.0.1 英文版（Mac 版）](http://pan.baidu.com/s/1pJ0QFfd)
+[Mathematica 9.0.1 英文版（Mac 版）](https://pan.baidu.com/s/1pJ0QFfd)
 
 ### Mathematica 8.0
 
@@ -474,9 +475,9 @@ Wolfram Engine 的激活方法可参考官网的介绍 [How do I set up the Wolf
 >
 > 只有自带了**中文帮助**的才叫中文版！自行汉化的方法详见前文“中文版和英文版的区别”小节。
 
-没有太多需求的初学者可以考虑先上手版本 8，参考[版本 9 的中文帮助搜索能力退化](http://tieba.baidu.com/p/3204136180)。**仍请注意兼容性等问题。**
+没有太多需求的初学者可以考虑先上手版本 8，参考[版本 9 的中文帮助搜索能力退化](https://tieba.baidu.com/p/3204136180)。**仍请注意兼容性等问题。**
 
-[Mathematica 8.0.4 中文版](http://pan.baidu.com/s/1skUb3n3)（MD5：`6aebc6776548f7b6ed134efafdb2af5d`）
+[Mathematica 8.0.4 中文版](https://pan.baidu.com/s/1skUb3n3)（MD5：`6aebc6776548f7b6ed134efafdb2af5d`）
 
 ### 早期版本
 
@@ -487,7 +488,7 @@ Wolfram Engine 的激活方法可参考官网的介绍 [How do I set up the Wolf
 3. 早期 Mathematica 的自带文档非常简略。
 4. 在版本 7 以前，Mathematica 无官方中文版。
 5. 在版本 10 以前，撤销 (Undo) 只有一次。版本 10 开始支持[多重撤销](https://reference.wolfram.com/language/ref/UndoOptions.html)。
-6. [版本 9 的中文帮助搜索能力退化](http://tieba.baidu.com/p/3204136180)。
+6. [版本 9 的中文帮助搜索能力退化](https://tieba.baidu.com/p/3204136180)。
 7. [绘图和动画等功能在版本 6 有过重大修改](https://note.youdao.com/noteshare?id=0c2719208239696d61182199327bd38c)。
 
 所以，**如无特殊原因，请不要选择过老版本的 Mathematica！**
@@ -587,7 +588,7 @@ Mathematica 1.2 英文版（DOS 版）[百度网盘](https://pan.baidu.com/s/1eR
 如果不知道该填什么，请参考下文。
 
 **版本 10.4** 的：
-[注册机](http://pan.baidu.com/s/1dF8xg0h)
+[注册机](https://pan.baidu.com/s/1dF8xg0h)
 
 此注册机可以完全激活 10.4.0 及 10.4.1 中、英文版。
 
@@ -601,9 +602,9 @@ Mathematica 1.2 英文版（DOS 版）[百度网盘](https://pan.baidu.com/s/1eR
 
 **版本 8 到 10** 的注册机：
 
-> <del>[新版注册机（可用于版本 8、9、10）下载地址](http://pan.baidu.com/share/link?shareid=188221&uk=1661347987)（注意激活版本 9 时需要多试几次，下详。版本 10 亦可使用本注册机，但需试很多次，成功率极低。）</del>可用于版本 8、9、10 的新版注册机下载地址现已失效，且吧主电脑里没存档，故暂时无法补档，欢迎手里有这个注册机的同学补上。不过，看了本教程的你应该也注意到了，这个新版注册机其实并不好使。对版本 8，新旧注册机没区别。对版本 9，部分计算机可能没法用新注册机激活，还不如用旧版，也就多一道手续；更何况——这里再强调一遍——版本 9 的自带帮助有搜索能力退化的问题，新手别用！
+> <del>[新版注册机（可用于版本 8、9、10）下载地址](https://pan.baidu.com/share/link?shareid=188221&uk=1661347987)（注意激活版本 9 时需要多试几次，下详。版本 10 亦可使用本注册机，但需试很多次，成功率极低。）</del>可用于版本 8、9、10 的新版注册机下载地址现已失效，且吧主电脑里没存档，故暂时无法补档，欢迎手里有这个注册机的同学补上。不过，看了本教程的你应该也注意到了，这个新版注册机其实并不好使。对版本 8，新旧注册机没区别。对版本 9，部分计算机可能没法用新注册机激活，还不如用旧版，也就多一道手续；更何况——这里再强调一遍——版本 9 的自带帮助有搜索能力退化的问题，新手别用！
 
-[旧版注册机（可用于版本 8、9、10）](http://pan.baidu.com/s/1eQGtvF0)
+[旧版注册机（可用于版本 8、9、10）](https://pan.baidu.com/s/1eQGtvF0)
 
 注意，激活版本 9 时，需要多试几次，下详。已证实，部分计算机必须使用旧版注册机才能完全激活版本 9。使用这个注册机激活版本 9 时要多点步骤，下详。同样的，密码里的 `::1` 也是密码的一部分！版本 10 亦可使用本注册机，但需试很多次，成功率极低。
 
@@ -611,12 +612,12 @@ Mathematica 1.2 英文版（DOS 版）[百度网盘](https://pan.baidu.com/s/1eR
 >
 > 版本 8 的这两个注册机，需要 VC2010 运行库 (Microsoft Visual C++ 2010 Redistributable Package)。如果注册机不能运行，请下载：
 >
-> [Visual C++ Redistributable downloads - Microsoft Support](https://docs.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist)
+> [Latest supported Visual C++ Redistributable downloads](https://docs.microsoft.com/cpp/windows/latest-supported-vc-redist)
 
 >
 > 下载运行库，安装之后，注册机应该就能运行，不要嫌麻烦！
 
-[Mathematica 9 英文版的注册机](http://pan.baidu.com/share/link?shareid=549603888&uk=1661347987)。（注意，这个只能用来激活英文版！）
+[Mathematica 9 英文版的注册机](https://pan.baidu.com/share/link?shareid=549603888&uk=1661347987)。（注意，这个只能用来激活英文版！）
 
 ### 安装软件和获取 Math ID
 
@@ -630,15 +631,15 @@ Mathematica 1.2 英文版（DOS 版）[百度网盘](https://pan.baidu.com/s/1eR
 
    点击下方的**其它方式激活** (Other ways to activate)。（切记！不要说激活密钥无效，因为你选错了。）
 
-   ![“Wolfram 产品激活”对话框](http://ww4.sinaimg.cn/large/a15b4afegw1f7gukpbbqcj20i80dltaf)
+   ![“Wolfram 产品激活”对话框](https://ww4.sinaimg.cn/large/a15b4afegw1f7gukpbbqcj20i80dltaf)
 
 3. 在新的页面中，选择**手动激活** (Manual Activation)。
 
-   ![在其它方式激活中，选择手动激活](http://ww4.sinaimg.cn/large/a15b4afegw1f7guljc5s9j20i80dlgne)
+   ![在其它方式激活中，选择手动激活](https://ww4.sinaimg.cn/large/a15b4afegw1f7guljc5s9j20i80dlgne)
 
 4. 在新的页面中，记下 **Math ID**。
 
-   ![“手动激活”对话框](http://ww4.sinaimg.cn/large/a15b4afegw1f7gulhnsflj20i80dl0uk)
+   ![“手动激活”对话框](https://ww4.sinaimg.cn/large/a15b4afegw1f7gulhnsflj20i80dl0uk)
 
    注意，是**把你的电脑上的这串数复制下来**。不要抄上面的图！
 
@@ -654,7 +655,7 @@ Mathematica 1.2 英文版（DOS 版）[百度网盘](https://pan.baidu.com/s/1eR
 3. 将 Math ID 粘贴进注册机的 Math ID （第一个）输入框中。
 4. 回车，或者点击注册机下方 **Save mathpass**，得到 Activation Key 和 Password。
 
-   ![Mathematica 8 的注册机](http://ww4.sinaimg.cn/large/a15b4afegw1f7gulg7i3hj208h0b2gmm)
+   ![Mathematica 8 的注册机](https://ww4.sinaimg.cn/large/a15b4afegw1f7gulg7i3hj208h0b2gmm)
 
    注意：图中所示的是老版注册机的界面，它的 Activation Key 的格式是 `4 位数字-4 位数字-5 位字母`，或者里面有 `::1`。
 
@@ -697,13 +698,13 @@ Mathematica 1.2 英文版（DOS 版）[百度网盘](https://pan.baidu.com/s/1eR
 
 不妨阅读以下几篇文章：
 
-[《写给新手》](http://note.youdao.com/noteshare?id=058e6037396d925af1f4abe4d54a52a8)
+[《写给新手》](https://note.youdao.com/noteshare?id=058e6037396d925af1f4abe4d54a52a8)
 
-[《怎样算阶乘（一）—— Mathematica 是个计算器》](http://note.youdao.com/noteshare?id=c5114ccda3270199fd801952cf785bff)
+[《怎样算阶乘（一）—— Mathematica 是个计算器》](https://note.youdao.com/noteshare?id=c5114ccda3270199fd801952cf785bff)
 
-[《你查过自带帮助了吗？你真的会查自带帮助吗？》](http://note.youdao.com/noteshare?id=abd51087f44c0b6a41ff6022d549dc41)
+[《你查过自带帮助了吗？你真的会查自带帮助吗？》](https://note.youdao.com/noteshare?id=abd51087f44c0b6a41ff6022d549dc41)
 
-[《有的字母蓝，有的字母黑，你知道为什么吗？你对语法着色有认识吗？》](http://note.youdao.com/noteshare?id=06adaac6aaf85c87c4cd6fdf715b418c)
+[《有的字母蓝，有的字母黑，你知道为什么吗？你对语法着色有认识吗？》](https://note.youdao.com/noteshare?id=06adaac6aaf85c87c4cd6fdf715b418c)
 
 下面列出一些新手常见问题：
 
@@ -783,7 +784,7 @@ Activation Key 和 Password 是对应于 Math ID 的，跟硬件设备无关。
 
 ### 【Q6】出现问题“Assertion 'foundPrinterDevice'在 Printing.c:3950时失败”
 
-![Mathematica 启动错误](http://ww4.sinaimg.cn/large/a15b4afegw1f7gusak0ctj20b406haai)
+![Mathematica 启动错误](https://ww4.sinaimg.cn/large/a15b4afegw1f7gusak0ctj20b406haai)
 
 【A6】打印机服务 (Print Spooler) 没开。
 
@@ -792,7 +793,7 @@ Activation Key 和 Password 是对应于 Math ID 的，跟硬件设备无关。
 
 ### 【Q6.5】出现 `Error code: 698`，内核可以启动，但主程序（前端）无法启动
 
-![Error code 698](http://ww4.sinaimg.cn/large/a15b4afegw1f7gutazpgmj20az06xwf2)
+![Error code 698](https://ww4.sinaimg.cn/large/a15b4afegw1f7gutazpgmj20az06xwf2)
 
 【A6.5】
 
@@ -920,7 +921,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Mathematica
 
 提示说：
 
-> 这份 Mathematica 使用的密码不允许英语以外的其它语言。关于启用更多的功能，请与 Wolfram Research 联系 (`http://www.wolfram.com`). 您必须重新启动前端。
+> 这份 Mathematica 使用的密码不允许英语以外的其它语言。关于启用更多的功能，请与 Wolfram Research 联系 (`https://www.wolfram.com`). 您必须重新启动前端。
 
 【A10】因为你用英文注册机激活中文版。（认真看教程！不要跑外面去乱下注册机！🤦）
 
@@ -939,13 +940,13 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Mathematica
 
 ### 【Q12】为什么每次点开注册机都出现“已停止工作”
 
-![注册机已停止工作，在 Windows 8](http://ww4.sinaimg.cn/large/a15b4afegw1f7guucxxcbj20a60550so)
+![注册机已停止工作，在 Windows 8](https://ww4.sinaimg.cn/large/a15b4afegw1f7guucxxcbj20a60550so)
 
 【A12】前文已经说了，请安装 VC 运行库。
 
 ### 【Q13】使用没问题，但界面出现乱码，如图
 
-![Mathematica 9 界面乱码，在 Windows 7](http://ww4.sinaimg.cn/large/a15b4afegw1f7guv45c0ej20g400idfn)
+![Mathematica 9 界面乱码，在 Windows 7](https://ww4.sinaimg.cn/large/a15b4afegw1f7guv45c0ej20g400idfn)
 
 【A13】似乎存在多种原因。
 
@@ -953,8 +954,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Mathematica
 
 ### 【Q14】版本 10 及以上（不论中英文版）卡顿，卡在初始界面，界面显示不完全
 
-【A14】具体参考<del><http://tieba.baidu.com/p/4039684644></del>（注：此链接因 妙谛莲花 被百度无故封号，目前暂无法访问）。卡顿问题在该帖 2 楼，卡在初始界面的问题在该帖 3 楼，界面显示不完全的问题在该帖 4 楼。
- 
+【A14】具体参考<del><https://tieba.baidu.com/p/4039684644></del>（注：此链接因 妙谛莲花 被百度无故封号，目前暂无法访问）。卡顿问题在该帖 2 楼，卡在初始界面的问题在该帖 3 楼，界面显示不完全的问题在该帖 4 楼。
+
  已证实版本 11 及以上的 Paclet 更新也可能导致卡顿，此问题可通过使用 [Paclet 镜像站](https://gitee.com/wolframpaclet/WolframPacletGeneral)来解决。
 
 ### 【Q15】Windows 10 最多能支持 Mathematica 多低的版本
@@ -963,13 +964,13 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Mathematica
 
 ### 【Q16】安装完后打开出现未响应，如图所示
 
-![Wolfram Mathematica 10.3 未响应，在 Windows 7](http://ww4.sinaimg.cn/large/a15b4afegw1f7guw7rirbj20fr0g5di1)
+![Wolfram Mathematica 10.3 未响应，在 Windows 7](https://ww4.sinaimg.cn/large/a15b4afegw1f7guw7rirbj20fr0g5di1)
 
 【A16】 原因是，没更新 Windows 的一个补丁。如果你把自动更新关了，打开更新，更新内容里有 Windows Service Pack，更新之后重新安装即可。
 
 ### 【Q17】 安装的时候出现无响应，如下图
 
-![Wolfram Mathematica 10.4 已停止工作，在 Windows 7](http://ww4.sinaimg.cn/large/a15b4afegw1f7guwxv9lij20di0bljsm)
+![Wolfram Mathematica 10.4 已停止工作，在 Windows 7](https://ww4.sinaimg.cn/large/a15b4afegw1f7guwxv9lij20di0bljsm)
 
 【A17】软件必须安装在**英文**名称的路径下。
 
